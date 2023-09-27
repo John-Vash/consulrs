@@ -65,6 +65,9 @@ pub struct AgentServiceCheck {
     pub tlk_skip_verify: Option<String>,
     #[serde(rename = "TTL")]
     pub ttl: Option<String>,
+    #[serde(rename = "H2PING")]
+    pub h2_ping: Option<String>,
+    pub h2_ping_use_tls: Option<bool>,
 }
 
 #[skip_serializing_none]
